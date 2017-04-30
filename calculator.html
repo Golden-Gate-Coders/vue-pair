@@ -7,35 +7,33 @@
 <body>
 
 <div id="calculator">
-
   <div id="expression">
     {{ expression }}
   </div>
 
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
+  <button v-on:click="addToExpression(1)">1</button>
+  <button v-on:click="addToExpression(2)">2</button>
+  <button v-on:click="addToExpression(3)">3</button>
   <br/>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
+  <button v-on:click="addToExpression(4)">4</button>
+  <button v-on:click="addToExpression(5)">5</button>
+  <button v-on:click="addToExpression(6)">6</button>
   <br />
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
+  <button v-on:click="addToExpression(7)">7</button>
+  <button v-on:click="addToExpression(8)">8</button>
+  <button v-on:click="addToExpression(9)">9</button>
   <br />
-  <button>+</button>
-  <button>-</button>
-  <button> <- </button>
+  <button v-on:click="addToExpression(0)">0</button>
+  <button v-on:click="addToExpression('+')">+</button>
+  <button v-on:click="addToExpression('-')">-</button>
   <br />
-  <button>X</button>
-  <button>/</button>
-  <button>C</button>
+  <button v-on:click="clear()">C</button>
+  <button v-on:click="addToExpression('*')">&times;</button>
+  <button v-on:click="addToExpression('/')">&divide;</button>
   <br />
-  <button id="eq-button">=</button>
+  
+  <button id="eq-button" v-on:click="evaluate()">=</button>
 </div>
-
-
 
 <script type="text/javascript" src="https://unpkg.com/vue@2.3.0"></script>
 <script type="text/javascript" src="calculator.js"></script>

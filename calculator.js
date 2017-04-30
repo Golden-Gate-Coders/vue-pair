@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     el: '#calculator',
     data: {
       expression: '0'
+    },
+    methods: {
     }
   });
 });
