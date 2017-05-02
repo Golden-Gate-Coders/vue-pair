@@ -1,0 +1,47 @@
+#weather {
+  margin: 25px;
+  padding: 25px;
+}
+
+#header-box {
+  text-align: center;
+}
+
+.forecast_day {
+  border: 1px solid gray;
+  width: 250px;
+  height: 100%;
+
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+
+  text-shadow: black 0px 0px 10px;
+}
+
+.sunny_day {
+  background-image: url("https://villagemedia.blob.core.windows.net/files/sudbury/uploadedImages/SUMMER_sunWater.jpg");
+  color: white;
+  background-size: 250px auto;
+}
+
+
+.cloudy-day {
+  background-image: url("http://static1.uk.businessinsider.com/image/57855b6ddd0895a1588b4afa-480/clouds.jpg");
+  color: white;
+  background-size: 250px auto;
+}
+
+.rainy-day {
+    background-image: url("https://c1.staticflickr.com/5/4027/4626448516_4365d2e85b_b.jpg");
+    color: white;
+    background-size: 250px auto;
+}
+
+.windy-day {
+  background-image: url("http://images.nationalgeographic.com/wpf/media-live/photos/000/001/cache/dakota-prairie-tornado_127_990x742.jpg");
+  color: white;
+  background-size: 250px auto;
+}
+
+

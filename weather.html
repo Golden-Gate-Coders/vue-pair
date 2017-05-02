@@ -8,8 +8,29 @@
 
 <div id="weather">
 
-</div>
+  <div id="header-box">
+    <h1>VueWeather</h1>
+    <input type="text" v-model="location">
+    <button v-on:click="grabWeather()">Go!</button>
+  </div>
 
+  <div id="conditions">
+    <h2>Current Conditions for {{ weatherData.location.city }}, {{ weatherData.location.region }}:</h2>
+
+    <h3>Current Temperature: {{ weatherData.item.condition.temp }} &deg; </h3>
+    <h3>Conditions: {{ weatherData.item.condition.text }} </h3>
+  </div>
+
+  <div id="forecast">
+    <div class="forecast_day" v-for="day in forecast" v-bind:class="getDayBackground(day)">
+      <h3>{{ day.day }}, {{ day.date }}</h3>
+      <h2>{{ day.high }}&deg; / {{ day.low }}&deg;
+      <h3>{{ day.text }}</h3>
+    </div>
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="https://unpkg.com/vue@2.3.0"></script>
 <script type="text/javascript" src="weather.js"></script>
 </body>
